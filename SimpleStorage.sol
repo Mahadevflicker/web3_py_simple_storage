@@ -28,9 +28,10 @@ contract SimpleStorage {
 
 
     // Stores the record of the favouriteNumber
-    function store(uint256 _favouriteNumber) public {
+    function store(uint256 _favouriteNumber) public returns(uint256) {
 
         favouriteNumber = _favouriteNumber;
+        return _favouriteNumber;
     }
 
     // Retrieve the record of the favouriteNumber
